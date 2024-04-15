@@ -47,7 +47,7 @@ def ssim_score(image, reference, data_range=256):
     """
     return ssim(image, reference, data_range=data_range, multichannel=True)
 
-def TV(coeffLambda, mu, image):
+def TV(image, coeffLambda, mu, Niter):
     """
     Perform Total Variation (TV) denoising on an image.
     
@@ -88,8 +88,6 @@ def TV(coeffLambda, mu, image):
         xGamma = np.ones(y.shape) * gamma * coeff
         return np.maximum(np.minimum(np.zeros(y.shape), y + xGamma), y - xGamma)
 
-    # Parameters
-    Niter = 50  # max number of iterations
 
     # Step definitions
     a = 2 / 4
@@ -118,7 +116,7 @@ def TV(coeffLambda, mu, image):
     Iapprox = X[-1]
     return [I, Iapprox, z]
 
-def DisplayImages(initial_image, blurred_image, denoised_image):
+def DisplayImages(initial_image, denoised_image,  blurred_image):
     """
     Display three images in subplots: initial image, blurred and noisy image, denoised image.
 
