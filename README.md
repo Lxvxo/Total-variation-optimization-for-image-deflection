@@ -23,7 +23,7 @@ pip install numpy matplotlib opencv-python scikit-image
 ## Usage
 Run the script `deblurring_denoising.py` from the command line with the following arguments for example:
 ```bash
-python deblurring_denoising.py --input_image data/lama.png --output_directory results --Lambda 0.1 --mu 0.01 --iterations 100
+python deblurring_denoising.py --input_image data/leopard.png --output_directory results --Lambda 0.1 --mu 0.01 --iterations 100
 ```
 --input_image: Path to the input image (blurred and noisy).
 --output_directory: Directory where the results will be saved.
