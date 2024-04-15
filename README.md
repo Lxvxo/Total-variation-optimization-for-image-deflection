@@ -1,6 +1,6 @@
 # Image Deblurring and Denoising
 
-This Python script is designed to perform image deblurring and denoising using a total variation (TV) regularization method. It takes a blurred and noisy input image as input and produces a denoised output image using an iterative optimization algorithm.
+This Python script is designed to perform image deblurring and denoising using a total variation (TV) regularization method. It takes a blurred and noisy input image as input and produces a denoised output image using an iterative optimization algorithm. In order to test the accuracy of the program, the script takes as an argument an image without blurring. He applies a Gaussian blur and tries to deflect the same image.
 
 ## Overview
 
@@ -23,7 +23,7 @@ pip install numpy matplotlib opencv-python scikit-image
 ## Usage
 Run the script `deblurring_denoising.py` from the command line with the following arguments for example:
 ```bash
-python deblurring_denoising.py --input_image example.png --output_directory results --lambda 0.1 --mu 0.01 --iterations 100
+python deblurring_denoising.py --input_image data/lama.png --output_directory results --Lambda 0.1 --mu 0.01 --iterations 100
 ```
 --input_image: Path to the input image (blurred and noisy).
 --output_directory: Directory where the results will be saved.
