@@ -35,8 +35,11 @@ python deblurring_denoising.py --input_image data/lama.png --output_directory re
 The script generates the following outputs:
 
 1.Deblurred and Denoised Image: The final denoised output image.
+![example](https://github.com/Lxvxo/Total-variation-optimization-for-image-deflection/assets/113984090/cf98a995-f925-4196-ae06-b2341eccf9f6)
+
 2.MSE, SNR, and SSIM Plots: Plots showing the Mean Squared Error (MSE), Signal-to-Noise Ratio (SNR), and Structural Similarity Index (SSIM) over iterations
 For plot the noise, you have to recup the funtions in `functions.py` and and launched yourself the program with your settings.
+![l1](https://github.com/Lxvxo/Total-variation-optimization-for-image-deflection/assets/113984090/aa6c3726-6ae6-47bb-8d0a-d58a8d586454)
 
 ## Report 
 The report correctly explains the mathematical resolution by the ADMM method (Alternating Directions Algorithm) for image deflection. It is written in French and contains various illustrations to help understand the influence of different parameters on the accuracy of the total variation model.
