@@ -1,6 +1,6 @@
 # Image Deblurring and Denoising
 
-This Python script is designed to perform image deblurring and denoising using a total variation (TV) regularization method. It takes a blurred and noisy input image as input and produces a denoised output image using an iterative optimization algorithm. In order to test the accuracy of the program, the script takes as an argument an image without blurring. He applies a Gaussian blur and tries to deflect the same image.
+This Python script is designed to perform image deblurring and denoising using a total variation (TV) regularization method. It takes a blurred and noisy input image as input and produces a denoised output image using an iterative optimization algorithm. In order to test the accuracy of the program, the script takes as an argument an image without blurring. He applies a Gaussian blur and tries to deflect this image.
 
 ## Overview
 
@@ -38,7 +38,8 @@ The script generates the following outputs:
 ![example](https://github.com/Lxvxo/Total-variation-optimization-for-image-deflection/assets/113984090/cf98a995-f925-4196-ae06-b2341eccf9f6)
 
 2.MSE, SNR, and SSIM Plots: Plots showing the Mean Squared Error (MSE), Signal-to-Noise Ratio (SNR), and Structural Similarity Index (SSIM) over iterations
-For plot the noise, you have to recup the funtions in `functions.py` and and launched yourself the program with your settings.
+For plot the noise, you have to recup the funtions in `functions.py` and launched yourself the program with your settings.
+Example : 
 ![l1](https://github.com/Lxvxo/Total-variation-optimization-for-image-deflection/assets/113984090/aa6c3726-6ae6-47bb-8d0a-d58a8d586454)
 
 ## Report 
